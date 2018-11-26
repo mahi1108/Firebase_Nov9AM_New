@@ -15,8 +15,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity,
                     AuthActivity::class.java))
         }
-        fb_db.setOnClickListener {  }
-        fb_storage.setOnClickListener {  }
+        fb_db.setOnClickListener {
+            startActivity(Intent(this@MainActivity,
+                DatabaseActivity::class.java))
+        }
+        fb_storage.setOnClickListener {
+            startActivity(Intent(this@MainActivity,
+                StorageActivity::class.java))
+        }
         fb_admob.setOnClickListener {  }
         fb_mlkit.setOnClickListener {  }
 
