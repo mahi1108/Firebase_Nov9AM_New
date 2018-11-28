@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Firebase_Nov9AM</string>
+    <string name="appid">ca-app-pub-8116550355049581~2783881210</string>
+    <string name="banner_id">ca-app-pub-8116550355049581/8499242325</string>
+    <string name="interestial_id">ca-app-pub-8116550355049581/3985158533</string>
+    <string name="video_id">ca-app-pub-8116550355049581/9907569055</string>
 </resources>

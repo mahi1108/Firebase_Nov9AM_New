@@ -89,17 +89,12 @@ class StorageActivity : AppCompatActivity() {
         var file = File(uri!!.path)
         sRef.child(file.name).putFile(uri!!).
             addOnSuccessListener {
-
                 var url = it.downloadUrl.toString()
                 var dBase = FirebaseDatabase.getInstance()
                 var dRef = dBase.getReference("users")
                 var uid = FirebaseAuth.getInstance().uid
                 var uid_ref = dRef.child(uid.toString())
                 uid_ref.child("pic_url").setValue(url)
-
         }
-
-
     }
-
 } //StorageActivity

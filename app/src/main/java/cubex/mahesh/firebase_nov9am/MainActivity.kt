@@ -23,9 +23,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity,
                 StorageActivity::class.java))
         }
-        fb_admob.setOnClickListener {  }
-        fb_mlkit.setOnClickListener {  }
-
+        fb_admob.setOnClickListener {
+            startActivity(Intent(this@MainActivity,
+                AdmobActivity::class.java))
+        }
+        fb_mlkit.setOnClickListener {
+            startActivity(Intent(this@MainActivity,
+                MLKitActivity::class.java))
+        }
+        userInfo.setOnClickListener {
+            startActivity(Intent(this@MainActivity,
+                UserInfoActivity::class.java))
+        }
 
     }
 }

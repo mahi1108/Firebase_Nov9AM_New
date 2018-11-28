@@ -3,8 +3,8 @@
           package="cubex.mahesh.firebase_nov9am">
 
     <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
             android:allowBackup="true"
@@ -26,6 +26,22 @@
         </activity>
         <activity android:name=".StorageActivity">
         </activity>
+        <activity android:name=".AdmobActivity">
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="@string/appid"/>
+
+        <activity android:name=".UserInfoActivity">
+        </activity>
+        <activity android:name=".MLKitActivity">
+        </activity>
+
+        <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="ocr" />
+
     </application>
 
 </manifest>
